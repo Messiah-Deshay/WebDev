@@ -1,0 +1,132 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(175, 146, 146, 0.8));
+	
+}
+
+
+#container {
+	
+}
+
+.square {
+height:100px;
+width: 100px;
+position:fixed;
+background-image: linear-gradient(to right, rgba(81,168,132,0.8), rgba(90,35,2,0.8));
+top:350px;
+right:600px;
+transition: 3s;
+}
+
+.square:hover {
+background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(72, 61, 161, 0.8));
+transform:scale(3,3) translate(150,150px) rotate(50deg);
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  position: fixed;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  top:650px;
+  right:900px;
+  border-radius: 50%;
+  transition: 3s;
+}
+
+
+.circle:hover {
+	background:brown;
+	transform:scale(3,1) translate(0.1px,0.1px);
+}
+
+.rectangle {
+  height: 150px;
+  width: 300px;
+  background-color: #555;
+  top:100px;
+  right:950px;
+  position:fixed;
+  background:#6bbd00;
+  transition: 2s;
+}
+
+.rectangle:hover  {  
+    animation-name: the-best-animation;  
+    animation-duration: 5s;  
+    animation-fill-mode: forwards;  
+   }  
+  
+  @keyframes the-best-animation {  
+   0% {  
+     transform: translateX(0);  
+     background-color: aquamarine;  
+    }  
+  
+  35% {  
+     transform: translateX(100%) scale(0.5);  
+     background-color: pink;  
+    }  
+  
+  65% {  
+     transform: translateX(100%) translateY(100%) scale(0.5);  
+     background-color: violet;  
+    }  
+  
+  100% {  
+  transform: translateY(100%);  
+  background-color: aquamarine;  
+    }  
+  }  
+
+.triangle-up {
+	width: 200px;
+	height: 50px;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #555;
+	top:150px;
+	right:200px;
+	position:fixed;
+	background-image: conic-gradient(red, yellow, green);
+	background:#b5ffbf;
+}
+
+.triangle-up:hover {
+	background:orange;
+	transition: 1.5s;
+	
+}
+
+.parallelogram {
+	width: 300px;
+	height: 150px;
+	transform: skew(20deg);
+	background: #555;
+	top:700px;
+	right:200px;
+	position:fixed;
+	background:pink;
+	transition: 4s;
+}
+
+.parallelogram:hover {
+	background-image: radial-gradient(circle, indigo, purple, blue);
+    transform: rotate(20deg);
+}

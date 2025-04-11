@@ -1,0 +1,37 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+body {
+	font-family: 'Verdana', 'Roboto';
+	background:#cf7036;
+	
+}
+
+
+div#container {
+	margin:60px;	
+	border: 2px solid black;
+	padding:25px;
+	background:#8f3c56;
+}
+
+header {
+	font-family:'Century Gothic'
+}
+
+footer {
+	font-size:0.8em;
+	color:white;
+}

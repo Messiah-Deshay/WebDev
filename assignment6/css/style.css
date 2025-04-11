@@ -1,0 +1,122 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+	color: #9e0643;
+	background: url(../img/cat.jpg) no-repeat center center;
+	background-size: cover;
+	font-family: "Sono", monospace;
+}
+
+
+#container {
+	
+}
+
+header{
+    text-align: center;
+}
+
+#container>header h1{
+  color: #A5C882;  
+}
+
+p{
+    color: #3A3A3A;
+}
+
+section{
+    border: 5px solid black;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #738024;
+}
+
+footer{
+    font-size: 0.85em;
+    padding: 8px;
+    color: white;
+    
+}
+#container>footer p{
+    color: white;
+}
+
+
+.mobile{
+    display: block;
+}
+
+.desktop{
+    display: none;
+}
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+    body{ 
+    background: #677568 url(../img/cat.jpg) fixed no-repeat center;
+    background-size: cover;
+    }
+    
+    #container {
+        width: 725px;
+        margin: auto;
+    }
+	
+    section{ 
+        background: 6EC6FF;
+    }
+    
+    .desktop{
+        display:none;
+    }
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+    #container{
+        width: 1000px;
+    }
+    section#first{
+        float: left;
+        width: 430px;
+    }
+    section#second{
+        float:right;
+        width:450px;
+    }
+    
+    footer{
+        clear: both;
+
+    }
+
+} /* closes 1024px+ */
+
+
+

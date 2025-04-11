@@ -1,0 +1,73 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+body {
+  background-image: linear-gradient(to right, rgba(56,92,96,1), rgba(56,144,204,1));
+}
+
+
+
+h1 {
+	font-family:'Rammetto One';
+	text-shadow: 2px 2px 5px red;
+
+}
+
+p {
+	font-family:'Rammetto One';
+}
+	
+p.pink1 {
+	height:90px;
+	background:#2ee5f2;
+	font-size: 5em;
+	position:absolute;
+	top:130px;
+	right:600px;
+	color:#00f0c8;
+	text-shadow: 4px 4px 5px blue;
+}
+
+p.pink2 {
+	background:#2ee5f2;
+	position:absolute;
+	color:#00f0c8;
+	top:200px;
+	right:185px;
+	font-size: 5em;
+	height: 50px;
+	text-shadow: 4px 4px 5px blue;
+}
+
+p.pink3 {
+	position:absolute;
+	top:500px;
+	font-size: 1em;
+	color:#7ccaf7;
+	right:800px;
+	width:300px;
+    rotate: 5deg;
+}
+
+p.pink4 {
+	color:#a2dbfa;
+	top:700px;
+	right:100px;
+	position:absolute;
+}
+#container {
+	
+}
+
+

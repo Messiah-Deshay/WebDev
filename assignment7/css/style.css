@@ -1,0 +1,100 @@
+/* Basic CSS resets */
+html, body {  
+  margin: 0px;  
+  padding: 0px;  
+  height: 100%; 
+}  
+
+html {  
+  font-size: 1em;     
+  line-height: 1.4em;  
+}    
+
+body {  
+  font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;  
+  background-color: #032757;  
+}  
+
+#container {  
+  margin: auto;  
+  text-align: center;  
+  max-height: 50%;  
+  max-width: 80%;  
+
+}  
+
+header h1 {  
+  font-size: 2em;  
+  color: white;  
+}  
+
+main {  
+  padding: 10px;  
+  background-color:#949e83;  
+  display: flex;  
+  flex-direction: row;
+  gap: 20px;
+}
+
+figure {  
+  padding: 5px;  
+  max-height: fit-content;  
+  border-radius: 5%;  
+  background-color: rgb(36,36,36);  
+}  
+
+figure img {  
+  border-radius: 10%;  
+  width: 100%;  
+  height: auto; 
+}  
+
+figcaption {  
+  color: white;  
+}  
+
+footer {  
+  color: white;  
+  padding: 1em;  
+  background-color:#855401 ;  
+}  
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {  
+  #content { 
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+  }
+
+  .content-left { 
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    width: 50%; 
+  }
+
+  .content-right {
+    margin-left: 20px; 
+    width: 40%; 
+  }
+}
+
+figure.responsive {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+figure.responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
