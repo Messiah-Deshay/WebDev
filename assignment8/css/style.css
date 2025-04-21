@@ -1,0 +1,81 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin: 0px;
+	padding: 3px;
+	height: 100%;
+}
+
+html {
+	font-size: 1em;
+	line-height: 1.4em;
+}
+
+body {
+	color: #f7fad7;
+	background: linear-gradient(to right, #ff7e5f, #cf7b3c);
+	font-family: 'Trebuchet MS', Courier;
+}
+
+button {
+	color: white;
+	background: #b02566;
+	font-family: Baskerville, Comic Sans;
+	padding: 15px 30px; 
+    font-size: 18px; 
+    border-radius: 25px; 
+    border: none;
+    cursor: pointer; 
+    transition: background 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+header {
+	text-align: center;
+}
+
+div#container {
+	padding: 10px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	text-align: center;
+	width: 420px;
+	box-sizing: border-box; 
+
+p {
+	border: 1px solid black;
+	padding: 10px;
+	margin-bottom: 15px;
+	background: white;
+	box-sizing: border-box; 
+	width: 100%; 
+	font-family: 'Rubik Dirt', cursive;
+	color: black;
+	background: #f7fad7;
+}
+
+footer {
+	font-size: 0.85em;
+	padding: 7px;
+}
+
+/* DESKTOP */
+@media all and (min-width: 1024px) {
+	div#container {
+		margin-top: 20px;
+		width: 800px;
+		border: 1px solid #c9af98;
+		padding: 25px;
+	}
+
+	p {
+		width: 100%; /* Adjusted to 100% so it doesn't overflow */
+	}
+
+	footer {
+		clear: both;
+	}
+}
